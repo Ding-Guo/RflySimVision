@@ -21,7 +21,7 @@ cd /home/ego-planner-swarm/shfiles
 bash single.sh
 ```
 <p align = "center">
-<img src="pictures/demo1.gif" width = "640" height = "438" border="5" />
+<img src="pictures/demo1.gif" width = "576" height = "324" border="5" />
 </p>
 ## Swarm exploration
 ### Windows
