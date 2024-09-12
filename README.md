@@ -10,4 +10,24 @@ cd /home/ego-planner-swarm
 catkin_make
 ``` 
 ## Autonomous exploration
+### Windows
+```
+cd RflySimVision
+SingleRun.bat
+```
+### WSL
+```
+cd /home/ego-planner-swarm/shfiles
+bash single.sh
+```
 ## Swarm exploration
+### Windows
+```
+cd RflySimVision
+SwarmRun.bat
+```
+### WSL
+```
+cd /home/ego-planner-swarm/shfiles
+bash swarm.sh
+```
