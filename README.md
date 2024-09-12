@@ -23,6 +23,7 @@ bash single.sh
 <p align = "center">
 <img src="pictures/demo1.gif" width = "576" height = "324" border="5" />
 </p>
+
 ## Swarm exploration
 ### Windows
 ```
@@ -34,3 +35,6 @@ SwarmRun.bat
 cd /home/ego-planner-swarm/shfiles
 bash swarm.sh
 ```
+<p align = "center">
+<img src="pictures/demo2.gif" width = "576" height = "324" border="5" />
+</p>
