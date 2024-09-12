@@ -1,0 +1,55 @@
+<launch>
+
+	<node pkg="px4ctrl" type="px4ctrl_node" name="px4ctrl_uav0" output="screen">
+        	<!-- <remap from="~odom" to="/vicon_imu_ekf_odom" /> -->
+			
+		<remap from="~odom" to="/uav0/mavros/local_position/odom" />
+		<remap from="/mavros/state" to="/uav0/mavros/state" />
+		<remap from="~cmd" to="/drone_0_planning/pos_command" />
+
+        <remap from="/mavros/imu/data" to="/uav0/mavros/imu/data" />
+        <remap from="/mavros/setpoint_raw/attitude" to="/uav0/mavros/setpoint_raw/attitude" />
+        <remap from="/mavros/battery" to="/uav0/mavros/battery" />
+        <remap from="/mavros/set_mode" to="/uav0/mavros/set_mode" />
+        <remap from="/mavros/cmd/arming" to="/uav0/mavros/cmd/arming" />
+        <remap from="/mavros/cmd/command" to="/uav0/mavros/cmd/command" />
+        <remap from="/mavros/extended_state" to="/uav0/mavros/extended_state" />
+        <rosparam command="load" file="$(find px4ctrl)/config/ctrl_param_fpv_SITL.yaml" />
+        <param name="auto_takeoff_land/takeoff_height"      value="5.0"/>
+
+	</node>
+	<node pkg="px4ctrl" type="px4ctrl_node" name="px4ctrl_uav1" output="screen">
+        	<!-- <remap from="~odom" to="/vicon_imu_ekf_odom" /> -->
+
+		<remap from="~odom" to="/uav1/mavros/local_position/odom" />
+		<remap from="/mavros/state" to="/uav1/mavros/state" />
+		<remap from="~cmd" to="/drone_1_planning/pos_command" />
+        <remap from="/mavros/imu/data" to="/uav1/mavros/imu/data" />
+        <remap from="/mavros/setpoint_raw/attitude" to="/uav1/mavros/setpoint_raw/attitude" />
+        <remap from="/mavros/battery" to="/uav1/mavros/battery" />
+        <remap from="/mavros/set_mode" to="/uav1/mavros/set_mode" />
+        <remap from="/mavros/cmd/arming" to="/uav1/mavros/cmd/arming" />
+        <remap from="/mavros/cmd/command" to="/uav1/mavros/cmd/command" />
+        <remap from="/mavros/extended_state" to="/uav1/mavros/extended_state" />
+        <rosparam command="load" file="$(find px4ctrl)/config/ctrl_param_fpv_SITL.yaml" />
+        <param name="auto_takeoff_land/takeoff_height"      value="5.0"/>
+
+	</node>
+		<node pkg="px4ctrl" type="px4ctrl_node" name="px4ctrl_uav2" output="screen">
+            	<!-- <remap from="~odom" to="/vicon_imu_ekf_odom" /> -->
+
+    		<remap from="~odom" to="/uav2/mavros/local_position/odom" />
+    		<remap from="/mavros/state" to="/uav2/mavros/state" />
+    		<remap from="~cmd" to="/drone_2_planning/pos_command" />
+            <remap from="/mavros/imu/data" to="/uav2/mavros/imu/data" />
+            <remap from="/mavros/setpoint_raw/attitude" to="/uav2/mavros/setpoint_raw/attitude" />
+            <remap from="/mavros/battery" to="/uav2/mavros/battery" />
+            <remap from="/mavros/set_mode" to="/uav2/mavros/set_mode" />
+            <remap from="/mavros/cmd/arming" to="/uav2/mavros/cmd/arming" />
+            <remap from="/mavros/cmd/command" to="/uav2/mavros/cmd/command" />
+            <remap from="/mavros/extended_state" to="/uav2/mavros/extended_state" />
+            <rosparam command="load" file="$(find px4ctrl)/config/ctrl_param_fpv_SITL.yaml" />
+        <param name="auto_takeoff_land/takeoff_height"      value="5.0"/>
+
+    	</node>
+</launch>
