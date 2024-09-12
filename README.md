@@ -20,6 +20,7 @@ SingleRun.bat
 cd /home/ego-planner-swarm/shfiles
 bash single.sh
 ```
+!(./pictures/demo1.gif)
 ## Swarm exploration
 ### Windows
 ```
