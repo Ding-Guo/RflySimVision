@@ -1,5 +1,5 @@
 # RflySimVision
-[![An example for RflySimVision](https://img.youtube.com/vi/ZIis42qveZA/maxresdefault.jpg)](https://www.youtube.com/watch?v=ZIis42qveZA)
+[![An example for RflySimVision](https://img.youtube.com/vi/E5NQAp64wsA/maxresdefault.jpg)](https://youtu.be/E5NQAp64wsA)
 # #Installation
 Requirements: Windows10/11
 1. Download and configure the RFlysim platform according to the tutorial of https://rflysim.com/docs/#/en/2_Configuration/SoftwareInstallation
